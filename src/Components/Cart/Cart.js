@@ -2,8 +2,6 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
-
-    // console.log(props.cart);
     let total = 0;
     let shipping = 0;
     for(const product of props.cart){
