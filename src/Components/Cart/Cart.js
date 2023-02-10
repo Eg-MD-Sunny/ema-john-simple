@@ -14,10 +14,10 @@ const Cart = (props) => {
     return (
         <div className="Cart">
             <h2 className='order-potion'>Order Review</h2>
-                <p class="text-value">Selected Items: {props.cart.length}</p>
-                <p class="text-value">Total Price: ${total}</p>
-                <p class="text-value">Total Shipping Charge: ${shipping}</p>
-                <p class="text-value">Tax: {tax}</p>
+                <p className="text-value">Selected Items: {props.cart.length}</p>
+                <p className="text-value">Total Price: ${total}</p>
+                <p className="text-value">Total Shipping Charge: ${shipping}</p>
+                <p className="text-value">Tax: {tax}</p>
                 <h2>Grand Total:{grandTotal}</h2>
         </div>
     );

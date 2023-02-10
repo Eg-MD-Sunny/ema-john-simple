@@ -8,14 +8,12 @@ const Shop = () => {
 
     const [products,setProducts] = useState([])
     const [cart,setCart] = useState([]);
-
     useEffect(()=>{
-        fetch('products.json')
+        fetch('datas.json')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
-
-
+  
     const handleaddToCart = (product) =>{
         // console.log(product);
         const newCart = [...cart,product];
