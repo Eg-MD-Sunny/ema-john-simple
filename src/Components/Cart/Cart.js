@@ -4,7 +4,7 @@ import './Cart.css';
 const Cart = (props) => {
     let total = 0;
     let shipping = 0;
-    for(const product of props.cart){
+    for(let product of props.cart){
         total = total + product.price;
         shipping = shipping + product.shipping;
     }
